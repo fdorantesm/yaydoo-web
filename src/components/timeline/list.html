@@ -1,0 +1,19 @@
+<b-container class="content">
+  <b-row>
+    <b-col class="content">
+      <h1>Publicaciones</h1>
+      <fb-sign @login="loadPosts">
+        <span class="btn btn--facebook">Obtener posts de facebook</span>
+      </fb-sign>
+    </b-col>
+  </b-row>
+  <b-row>
+    <b-col md="4" sm="6" xs="12" v-for="post in user.posts">
+      <b-card img-src="https://picsum.photos/600/300/?image=25" img-alt="Image" img-top tag="article" style="max-width: 20rem;" class="mb-2" >
+        <b-card-text>
+          {{post.message}}
+        </b-card-text>
+      </b-card>
+    </b-col>
+  </b-row>
+</b-container>

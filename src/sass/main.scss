@@ -1,0 +1,10 @@
+@import "~bootstrap/scss/bootstrap.scss";
+@import '~nprogress/nprogress.css';
+
+html, body, #app-main {
+    height: 100%;
+}
+
+.content {
+  margin-top: 50px;
+}

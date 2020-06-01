@@ -1,0 +1,21 @@
+<b-container class="content">
+  <b-row>
+    <b-col class="content">
+      <b-form @submit.prevent="onSubmit" @reset.prevent="onReset">
+        <b-form-group label="Login:" label-for="login" description="We'll never share your login with anyone else.">
+          <b-form-input id="login" type="text" v-model="username" required placeholder="Enter login">
+          </b-form-input>
+        </b-form-group>
+        <b-form-group label="Your password:" label-for="psw">
+          <b-form-input id="psw" type="password" v-model="password" required placeholder="Enter password">
+          </b-form-input>
+        </b-form-group>
+        <b-button type="submit" variant="primary">Submit</b-button>
+        <b-button type="reset" variant="danger">Reset</b-button>
+        <p v-if="authError">
+          There was an error logging in to your account.
+        </p>
+        </b-form>
+    </b-col>
+  </b-row>
+</b-container>

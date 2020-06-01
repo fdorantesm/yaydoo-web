@@ -1,0 +1,12 @@
+<b-container class="content">
+  <b-row v-if="auth.accessToken === null">
+    <b-col class="content">
+      <fb-sign @login="onFacebookAuth">
+        <span class="btn btn--facebook">Ingresar con Facebook</span>
+      </fb-sign>
+    </b-col>
+  </b-row>
+  <b-row v-if="auth.user">
+    <h1>Hola, {{auth.user.username}}</h1>
+  </b-row>
+</b-container>

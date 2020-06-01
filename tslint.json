@@ -1,0 +1,32 @@
+{
+  "defaultSeverity": "error",
+  "extends": [
+      "tslint:recommended",
+      "tslint-config-standard"
+  ],
+  "jsRules": {},
+  "rules": {
+      "max-line-length": false,
+      "member-access": false,
+      "semicolon": [
+          true,
+          "always"
+      ],
+      "space-before-function-paren": false,
+      "trailing-comma": true,
+      "quotemark": [
+          true,
+          "single"
+      ],
+      "indent": [
+          true
+      ],
+      "interface-name": [
+          false
+      ],
+      "arrow-parens": false,
+      // Pending fix for shorthand property names.
+      "object-literal-sort-keys": false
+  },
+  "rulesDirectory": []
+}
